@@ -15,9 +15,9 @@ sys.path.insert(
 from allennlp.common.util import JsonDict
 from allennlp.data.tokenizers import WordTokenizer
 from allennlp.data.dataset_readers.semantic_parsing.wikitables import util as wikitables_util
-from allennlp.semparse.contexts import TableQuestionContext
-from allennlp.semparse.domain_languages import WikiTablesLanguage
-from allennlp.semparse import ActionSpaceWalker
+from allennlp_semparse.common.wikitables import TableQuestionContext
+from allennlp_semparse.domain_languages import WikiTablesLanguage
+from allennlp_semparse.common.action_space_walker import ActionSpaceWalker
 
 
 def search(
