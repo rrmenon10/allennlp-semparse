@@ -83,13 +83,13 @@ def search(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "table_directory",
+        "--table-directory",
         type=str,
         help="Location of the 'tagged' directory in the" "WikiTableQuestions dataset",
     )
-    parser.add_argument("data_file", type=str, help="Path to the *.examples file")
+    parser.add_argument("--data-file", type=str, help="Path to the *.examples file")
     parser.add_argument(
-        "output_path",
+        "--output-path",
         type=str,
         help="""Path to the output directory if
                         'output_separate_files' is set, or to the output file if not.""",

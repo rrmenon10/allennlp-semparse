@@ -414,6 +414,7 @@ class DomainLanguage:
                     start_types.update(type_list)
             for start_type in start_types:
                 actions[START_SYMBOL].add(f"{START_SYMBOL} -> {start_type}")
+            import ipdb; ipdb.set_trace()
             for name, function_type_list in self._function_types.items():
                 for function_type in function_type_list:
                     actions[function_type].add(f"{function_type} -> {name}")

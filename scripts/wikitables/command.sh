@@ -1,0 +1,1 @@
+python scripts/wikitables/search_for_logical_forms.py --table-directory wikitables --data-file wikitables/data/training.examples --output-path wikitables_search --output-separate-files --conservative --use-agenda
